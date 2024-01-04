@@ -17,4 +17,114 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--main-font-family);
+  font-size: var(--main-text-size);
+  font-variation-settings: "wght" var(--main-text-font-weight);
+  background-color: var(--background-color);
+  color: var(--main-color);
+  background-attachment: fixed;
+  background-image: var(--background-image);
+  background-size: cover;
+}
+
+.sections-appearance {
+  border: 2px solid var(--main-color);
+  background-color: var(--background-color);
+}
+
+@media (width > 480px) {
+  .sections-appearance {
+    inline-size: var(--inline-section-size);
+  }
+}
+
+.header {
+  font-family: var(--accent-font-family);
+  margin: 102px auto;
+  text-transform: uppercase;
+}
+
+.header h1 {
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  margin-block: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem) 20px;
+  text-align: center;
+}
+
+.header h2 {
+  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  text-align: center;
+}
+
+.theme-menu__list {
+  margin-block: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-inline-start: clamp(9.625rem, 6.0819rem + 15.1174vw, 19.6875rem);
+}
+
+.theme-menu__button {
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+}
+
+.theme-menu__button:disabled {
+  opacity: 0.6;
+}
+
+.theme-menu__button:disabled::before {
+  content: "▶";
+  width: 16px;
+  height: 13px;
+  position: absolute;
+  inset-inline-start: -15px;
+}
+
+.main__article {
+  margin-block-end: 54px;
+  margin-inline: auto;
+}
+
+.article__title {
+  font-variation-settings: "wght" var(--title-font-weight);
+  font-size: var(--main-text-size);
+  margin: 4px 10px 6px;
+}
+
+.article__image {
+  display: block;
+  inline-size: 100%;
+  aspect-ratio: 1/1;
+  background-image: url("../images/image.png");
+  background-position: 95%;
+  background-size: cover;
+}
+
+.article__description {
+  margin: 25px;
+}
+
+.article__paragraph:not(:last-child) {
+  margin-block-end: 27px;
+}
+
+.card__like-button {
+  font-family: var(--accent-font-family);
+  padding: 13px 37px;
+  border: 2px solid var(--main-color);
+}
+
+.article__button {
+  margin-inline-end: 25px;
+  margin-block-end: 25px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.footer {
+  margin-inline: auto;
+  inline-size: clamp(19.125rem, 18.4866rem + 2.7238vw, 20.938rem);
 }
