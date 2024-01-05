@@ -28,8 +28,9 @@
 }
 
 .sections-appearance {
-  border: 2px solid var(--main-color);
+  outline: 2px solid var(--main-color);
   background-color: var(--background-color);
+  inline-size: calc(100% - 4px);
 }
 
 @media (width > 480px) {
@@ -40,13 +41,13 @@
 
 .header {
   font-family: var(--accent-font-family);
-  margin: 102px auto;
+  margin: 100px auto 104px;
   text-transform: uppercase;
 }
 
 .header h1 {
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
-  margin-block: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem) 20px;
+  padding-block: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem) 20px;
   text-align: center;
 }
 
@@ -56,17 +57,30 @@
 }
 
 .theme-menu__list {
-  margin-block: 25px;
+  padding-block: 25px;
   display: flex;
   flex-direction: column;
   gap: 14px;
   margin-inline-start: clamp(9.625rem, 6.0819rem + 15.1174vw, 19.6875rem);
 }
 
-.theme-menu__button {
-  text-transform: uppercase;
+@media (width < 375px) {
+  .header h1 {
+    font-size: clamp(2.8125rem, 1.358rem + 7.2727vw, 3.0625rem);
+  }
+
+  .theme-menu__list {
+    margin-inline-start: clamp(8.125rem, -0.6023rem + 43.6364vw, 9.625rem);
+  }
+}
+
+.theme-menu__item {
   font-size: 14px;
   position: relative;
+}
+
+.theme-menu__button {
+  text-transform: uppercase;
 }
 
 .theme-menu__button:disabled {
@@ -78,7 +92,7 @@
   width: 16px;
   height: 13px;
   position: absolute;
-  inset-inline-start: -15px;
+  inset-inline-start: -20px;
 }
 
 .main__article {
@@ -89,7 +103,7 @@
 .article__title {
   font-variation-settings: "wght" var(--title-font-weight);
   font-size: var(--main-text-size);
-  margin: 4px 10px 6px;
+  padding: 5px 10px;
 }
 
 .article__image {
@@ -98,26 +112,34 @@
   aspect-ratio: 1/1;
   background-image: url("../images/image.png");
   background-position: 95%;
-  background-size: cover;
+  background-size: 152%;
+  outline: 2px solid var(--main-color);
 }
 
 .article__description {
-  margin: 25px;
+  margin: 28px 25px 27px;
+  line-height: 116.667%;
 }
 
 .article__paragraph:not(:last-child) {
   margin-block-end: 27px;
 }
 
+.like-icon {
+  margin-block-start: 5px;
+}
+
 .card__like-button {
   font-family: var(--accent-font-family);
-  padding: 13px 37px;
+  padding: 10px 35px;
   border: 2px solid var(--main-color);
+  font-size: 14px;
+  line-height: 90%;
 }
 
 .article__button {
-  margin-inline-end: 25px;
-  margin-block-end: 25px;
+  padding-inline-end: 25px;
+  padding-block-end: 25px;
   display: flex;
   align-items: center;
   gap: 12px;

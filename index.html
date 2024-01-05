@@ -21,7 +21,6 @@
       <h1>&lt;/html&gt;</h1>
       <h2>закрывающий тег</h2>
       <nav class="theme-menu header__theme-menu">
-        <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
           <li class="theme-menu__item">
             <button type="button" data-theme="dark" class="theme-menu__button">
@@ -70,10 +69,10 @@
               xmlns="http://www.w3.org/2000/svg"
               width="27"
               height="24"
-              fill="none"
+              fill="currentColor"
             >
               <path
-                fill="#000"
+                fill="currentColor"
                 d="M6 0H3v3h3V0ZM9 0H6v3h3V0ZM3 3H0v3h3V3ZM3 6H0v3h3V6ZM3 9H0v3h3V9ZM12 0H9v3h3V0ZM6 12H3v3h3v-3ZM9 15H6v3h3v-3ZM12 18H9v3h3v-3ZM21 0h3v3h-3V0ZM18 0h3v3h-3V0ZM24 3h3v3h-3V3ZM24 6h3v3h-3V6ZM24 9h3v3h-3V9ZM15 0h3v3h-3V0ZM21 12h3v3h-3v-3ZM18 15h3v3h-3v-3ZM15 18h3v3h-3v-3ZM15 3h-3v3h3V3ZM15 21h-3v3h3v-3Z"
               />
             </svg>
@@ -84,11 +83,14 @@
         </div>
       </article>
     </main>
-    <footer class="footer sections-appearance">
+    <!-- <footer class="footer sections-appearance"> 
       <button class="card__icon-button">
+        <svg>
+          <use href="./svg/tape.svg#tape">
+        </svg>
         <span class="button__text"> Сохранить на память </span>
       </button>
-    </footer>
+    </footer> -->
     <script src="./scripts/like.js"></script>
   </body>
 </html>
