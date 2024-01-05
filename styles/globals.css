@@ -30,8 +30,13 @@ a {
   color: inherit;
 }
 
+button:focus-visible {
+  outline: none;
+}
+
 button,
 input {
+  cursor: pointer;
   color: currentColor;
   font-family: inherit;
   font-size: inherit;

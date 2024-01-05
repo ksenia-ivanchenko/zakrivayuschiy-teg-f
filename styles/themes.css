@@ -14,6 +14,10 @@
   repeating-linear-gradient(#000 0 2px, transparent 2px 4px),
   repeating-linear-gradient(90deg, #000 0 2px, transparent 2px 4px),
   repeating-linear-gradient(to bottom, #007f0c 0.01%, #004306 100%);
+  --button-text-color: #00CC14;
+  --heart-contour-color: #000000;
+  --heart-fill-color: #00CC14;
+
 }
 
 :root.theme-light {
@@ -25,6 +29,10 @@
   repeating-linear-gradient(#d3d3d3 0 2px, transparent 2px 4px),
   repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
   repeating-linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
+  --button-text-color: #ffffff;
+  --heart-contour-color: #000000;
+  --heart-fill-color: #000000;
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -37,6 +45,10 @@
     repeating-linear-gradient(#000 0 2px, transparent 2px 4px),
     repeating-linear-gradient(90deg, #000 0 2px, transparent 2px 4px),
     repeating-linear-gradient(to bottom, #007f0c 0.01%, #004306 100%);
+    --button-text-color: #00CC14;
+    --heart-contour-color: #000000;
+    --heart-fill-color: #00CC14;
+
   }
 }
 
@@ -50,5 +62,9 @@
     repeating-linear-gradient(#d3d3d3 0 2px, transparent 2px 4px),
     repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
     repeating-linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
+    --button-text-color: #ffffff;
+    --heart-contour-color: #000000;
+    --heart-fill-color: #000000;
+
   }
 }
