@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="dark light" />
     <title>Закрывающий тег</title>
-    <!-- <link rel="icon" href="./images/favicon.ico" /> -->
+    <link rel="icon" href="./images/favicon.ico" />
     <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
-    <!-- <link rel="apple-touch-icon" href="./images/favicon.png" /> -->
+    <link rel="apple-touch-icon" href="./images/favicon.png" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
@@ -174,7 +174,7 @@
             наоборот, могли вдохновиться успехами и поверить в себя.
           </p>
           <p class="card__paragraph">
-            «Тут ты думаешь, что знаешь, что надо узнать»
+            «Тут ты думаешь, что знаешь, что не знаешь.»
           </p>
         </div>
         <div class="card__button-container">
@@ -231,7 +231,7 @@
             старались просто сделать.
           </p>
           <p class="card__paragraph">
-            «Тут ты думаешь, что в принципе знаешь много.»
+            «Тут все дается подозрительно легко, и ты попадаешь в когнитивную ловушку.»
           </p>
         </div>
         <div class="card__button-container">
@@ -397,7 +397,7 @@
             черпали.
           </p>
           <p class="card__paragraph">
-            «Тут подвохом уже конкретно попахивает...»
+            «Тут понимаешь, что на самом деле ты ничего не знаешь.»
           </p>
         </div>
         <div class="card__button-container">
@@ -455,8 +455,8 @@
             и есть результат.
           </p>
           <p class="card__paragraph">
-            «А здесь понимаешь, что знаешь на самом деле крохотную часть
-            огромного количества информации, которую предстоит освоить. А до
+            «А здесь понимаешь, что знаешь крохотную часть
+            огромного количества информации, которую предстоит освоить, и это абсолютно нормально. А до
             какой-то части, вероятно, ты никогда и не дойдешь, ведь невозможно
             узнать всё на свете. Но как интересно пытаться!»
           </p>
@@ -501,7 +501,36 @@
         </div>
       </article>
     </main>
+    <footer class="footer sections-appearance">
+      <button
+        class="footer__button button-animated"
+        type="button"
+        onclick="window['dialog'].showModal()"
+        aria-controls="dialog"
+      >
+        <svg class="tape button__text">
+          <use href="./svg/tape.svg#tape">
+        </svg> 
+        <span class="button__text">Сохранить на память</span>
+      </button>
 
+      <dialog class="dialog sections-appearance" id="dialog">
+          <svg class="dialog__tape-svg"
+          width="38"
+          height="38"
+          viewBox="0 0 38 38" >
+            <use class="dialog__tape" href="./svg/tape.svg#tape">
+          </svg>
+        <span class="dialog__text">Вставьте дискету, чтобы продолжить</span>
+        <button
+          class="dialog__button button-animated"
+          type="button"
+          onclick="window['dialog'].close()"
+        >
+          <span class="button__text">ок</span>
+        </button>
+      </dialog>
+    </footer>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
