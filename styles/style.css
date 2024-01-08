@@ -263,7 +263,6 @@
 }
 
 .button-animated::after {
-  position: relative;
   content: "";
   display: block;
   inline-size: 100%;
