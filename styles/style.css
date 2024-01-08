@@ -263,6 +263,7 @@
 }
 
 .button-animated::after {
+  position: relative;
   content: "";
   display: block;
   inline-size: 100%;
@@ -349,13 +350,13 @@
 
 .dialog__form {
   grid-column: 1 / 3;
+  border: 2px solid currentColor;
 }
 
 .dialog__button {
+  padding-block: 9px;
   inline-size: 100%;
   text-transform: uppercase;
-  border: 2px solid currentColor;
-  padding-block: 9px;
 }
 
 .dialog::backdrop {
